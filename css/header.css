@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+.head-container {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	background: transparent;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #4e598c;
+	font-family: "Lato", sans-serif;
+}
+.head-container > div {
+	display: flex;
+	align-items: center;
+}
+.left > div {
+	padding-left: 30px;
+}
+.logo-img {
+	height: 50px;
+}
+.app-name {
+	font-size: 2rem;
+	color: #f9c784;
+	display: block;
+}
+.right {
+	margin-right: 20px;
+	font-size: 20px;
+}
+.hamburger {
+	color: #fff;
+	font-size: 25px;
+	display: none;
+}
+.hamburger:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-height: 600px) {
+	.head-container {
+		height: 70px;
+	}
+	.app-name {
+		font-size: 25px;
+	}
+	.left > div {
+		padding-left: 20px;
+	}
+	.hamburger {
+		display: block;
+		width: 20px;
+	}
+}
+@media screen and (max-width: 880px) {
+	.app-name {
+		display: none;
+	}
+	.head-container {
+		height: 70px;
+	}
+	.app-name {
+		font-size: 25px;
+	}
+	.left > div {
+		padding-left: 20px;
+	}
+	.hamburger {
+		display: block;
+		width: 20px;
+	}
+}

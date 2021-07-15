@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+html,
+body {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+.container {
+	width: 100%;
+	height: calc(100% - 100px);
+	display: flex;
+	justify-content: center;
+}
+.sidebar-container {
+	width: 18%;
+	background-color: #1f1f1f;
+	height: 100%;
+	display: block;
+}
+.content-container {
+	width: 90%;
+	height: 100%;
+}
+.header-search {
+	font-size: 1.5rem;
+	font-family: "Lato", sans-serif;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.whole-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	height: 90%;
+}
+.search-container {
+	margin-left: 20px;
+	width: 40%;
+}
+.button-container {
+	height: 30px;
+	display: flex;
+	width: 90%;
+	margin-top: 10px;
+	font-family: "Lato", sans-serif;
+	justify-content: center;
+}
+.button {
+	background-color: #4c934c;
+	padding: 20px 10px 20px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	width: 100px;
+	border-radius: 20px;
+}
+.button:hover {
+	background-color: #53a548;
+	cursor: pointer;
+}
+.output {
+	width: 70%;
+	margin-top: 20px;
+	margin-left: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.candidate {
+	width: 80%;
+	font-family: "Lato", sans-serif;
+	font-size: 1.05rem;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #1f1f1f;
+	margin-bottom: 20px;
+}
+.details {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+.field {
+	display: flex;
+	margin-top: 10px;
+}
+.details > .field {
+	margin-top: 0px;
+}
+.exp {
+	flex-direction: column;
+}
+.exp > .title {
+	width: fit-content;
+}
+.field > div {
+	margin-right: 20px;
+}
+.title {
+	font-weight: bold;
+	margin-bottom: 5px;
+	width: 50px;
+	color: salmon;
+}
+.link {
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.link:hover {
+	cursor: pointer;
+}
+.eachDomain {
+	margin-bottom: 20px;
+}
+.field-domain {
+	display: flex;
+	margin-top: 5px;
+}
+.field-domain > div {
+	width: 30%;
+	font-size: 1rem;
+}
+.title-domain {
+	font-weight: bold;
+}
+.title-domain.heading {
+	color: slateblue;
+}
+.button-domain {
+	color: brown;
+	width: fit-content;
+}
+.button-domain:hover {
+	cursor: pointer;
+	color: rgb(180, 24, 24);
+}
+@media screen and (max-width: 880px) {
+	.content-container {
+		width: 100%;
+	}
+	.whole-container {
+		flex-direction: column;
+	}
+	.whole-container {
+		flex-direction: column;
+		height: fit-content;
+	}
+	.output {
+		height: fit-content;
+	}
+	.search-container {
+		width: 90%;
+	}
+	.output {
+		width: 90%;
+	}
+	.candidate {
+		width: 90%;
+	}
+	.dexp > .content-domain {
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 1302px) {
+	.field-domain.dexp {
+		flex-direction: column;
+		margin-top: 10px;
+	}
+	.field-domain > div {
+		width: 100%;
+		margin-top: 5px;
+	}
+	.slider-domain {
+		width: 80%;
+	}
+	.cexp {
+		flex-direction: column;
+	}
+}
