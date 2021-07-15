@@ -2,8 +2,6 @@ const express = require("express")
 const mongoose = require("mongoose")
 require("dotenv/config")
 const app = express()
-const server = require("http").createServer(app)
-const io = require("socket.io")(server)
 app.use(express.json())
 const candidateRoute = require("./routes/candidateRoute")
 
@@ -23,4 +21,4 @@ mongoose.connect(process.env.DB_CONNECTION, {
 	useCreateIndex: true,
 	useFindAndModify: false,
 })
-server.listen(3000 || process.env.PORT)
+app.listen(3000 || process.env.PORT)
